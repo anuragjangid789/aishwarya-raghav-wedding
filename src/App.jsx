@@ -15,6 +15,7 @@ import VenueSection from "./components/VenueSection";
 import ThankYouSection from "./components/ThankYouSection";
 import PetalsCanvas from "./components/PetalsCanvas";
 import { Volume2, VolumeX } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   const [hasEntered, setHasEntered] = useState(false);
@@ -197,6 +198,9 @@ export default function App() {
         {/* Minimal Petals Shower Animation in Green, Pink, Cream theme */}
         {hasEntered && <PetalsCanvas />}
       </IPhoneFrame>
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
