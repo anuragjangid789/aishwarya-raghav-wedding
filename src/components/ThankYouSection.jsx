@@ -339,6 +339,71 @@ export default function ThankYouSection() {
             &amp; The Entire Family
           </span>
         </div>
+
+        {/* 6. Company Branding Credit: snapivite (Clickable Instagram Link) */}
+        <a
+          href="https://www.instagram.com/snapivite?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Visit snapivite on Instagram"
+          aria-label="snapivite Instagram"
+          className="thankyou-snapivite-footer"
+          style={{
+            position: "absolute",
+            bottom: "3.0%",
+            left: "50%",
+            transform: "translateX(-50%)",
+            display: "inline-flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "5px",
+            textDecoration: "none",
+            fontFamily: "'Cinzel', serif",
+            fontSize: "clamp(0.32rem, 0.95vw, 0.40rem)",
+            letterSpacing: "0.20em",
+            fontWeight: "600",
+            color: "rgba(26, 38, 49, 0.60)",
+            pointerEvents: "auto",
+            zIndex: 20,
+            padding: "4px 10px",
+            borderRadius: "14px",
+            background: "rgba(255, 255, 255, 0.40)",
+            border: "1px solid rgba(212, 175, 55, 0.35)",
+            boxShadow: "0 2px 6px rgba(0, 0, 0, 0.06)",
+            transition: "all 0.3s ease",
+            opacity: isInView ? 1 : 0,
+            cursor: "pointer",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = "#875f28";
+            e.currentTarget.style.background = "rgba(255, 255, 255, 0.75)";
+            e.currentTarget.style.borderColor = "rgba(212, 175, 55, 0.65)";
+            e.currentTarget.style.transform = "translateX(-50%) translateY(-1px)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = "rgba(26, 38, 49, 0.60)";
+            e.currentTarget.style.background = "rgba(255, 255, 255, 0.40)";
+            e.currentTarget.style.borderColor = "rgba(212, 175, 55, 0.35)";
+            e.currentTarget.style.transform = "translateX(-50%) translateY(0)";
+          }}
+        >
+          <svg
+            width="11"
+            height="11"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#875f28"
+            strokeWidth="2.2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            style={{ flexShrink: 0 }}
+          >
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg>
+          <span>snapivite</span>
+        </a>
       </div>
     </section>
   );

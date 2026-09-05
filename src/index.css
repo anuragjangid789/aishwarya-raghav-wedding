@@ -817,6 +817,11 @@ body {
   .thankyou-signature {
     top: 76.5% !important;
   }
+  .thankyou-snapivite-footer {
+    bottom: 3.2% !important;
+    font-size: 0.36rem !important;
+    padding: 3px 9px !important;
+  }
 
   /* Hero Section - Increased 'and' connector & View Location Button on mobile screen devices only */
   .hero-and-connector {
@@ -861,5 +866,33 @@ body {
     transform-origin: center center !important;
     display: block !important;
   }
+
+  /* Events Section - Increased Medallion Button Size on Mobile Screen Devices Only */
+  .event-medallion-btn {
+    width: clamp(45px, 12.8vw, 55px) !important;
+    height: clamp(45px, 12.8vw, 55px) !important;
+  }
+
+  /* Event Card Modal - Decreased Text Sizes by 2px on Mobile Screen Devices Only */
+  .event-card-title {
+    font-size: calc(clamp(0.95rem, 3vw, 1.18rem) - 2px) !important;
+  }
+  .event-card-date {
+    font-size: calc(clamp(0.50rem, 1.55vw, 0.62rem) - 2px) !important;
+  }
+  .event-card-time {
+    font-size: calc(clamp(0.44rem, 1.35vw, 0.54rem) - 2px) !important;
+  }
+  .event-card-venue {
+    font-size: calc(clamp(0.38rem, 1.15vw, 0.46rem) - 2px) !important;
+  }
+  .event-card-dresscode {
+    font-size: calc(clamp(0.56rem, 1.7vw, 0.66rem) - 2px) !important;
+  }
+  .event-card-btn-text {
+    font-size: calc(clamp(0.34rem, 1.05vw, 0.40rem) - 2px) !important;
+  }
 }
+
+
 

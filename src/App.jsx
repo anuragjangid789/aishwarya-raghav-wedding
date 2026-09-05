@@ -61,7 +61,7 @@ export default function App() {
 
     // Keyboard smooth navigation support with Lenis
     const handleKeyDown = (e) => {
-      if (document.querySelector(".lightbox-modal-overlay")) return;
+      if (document.querySelector(".lightbox-modal-overlay, .event-card-modal-overlay")) return;
 
       if (e.key === "ArrowDown") {
         e.preventDefault();
